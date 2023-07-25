@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clients",
+  "info": {
+    "singularName": "client",
+    "pluralName": "clients",
+    "displayName": "Client",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Summary": {
+      "type": "text",
+      "required": true
+    },
+    "Subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "Before": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "After": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Challenge": {
+      "type": "text",
+      "required": true
+    },
+    "Location": {
+      "type": "string"
+    },
+    "Plan": {
+      "type": "enumeration",
+      "enum": [
+        "Essential",
+        "Pro",
+        "Turbo"
+      ],
+      "required": true,
+      "default": "Essential"
+    },
+    "Investors": {
+      "required": true,
+      "type": "integer"
+    },
+    "Why": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
